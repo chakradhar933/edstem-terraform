@@ -1,7 +1,7 @@
 provider "aws" {
-   region     = "eu-central-1"
-   access_key = "AKIATQ37NXB2OE336Z5R"
-   secret_key = "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"
+   region     = "us-east-2"
+   access_key = "############"
+   secret_key = "################"
    
 }
 
@@ -14,6 +14,6 @@ resource "aws_instance" "ec2_example" {
     }
 
   provisioner "local-exec" {
-    command = "touch hello-jhooq.txt"
+    command = "touch hello-edstem.txt"
   }
 }

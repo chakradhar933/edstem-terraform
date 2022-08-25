@@ -1,7 +1,7 @@
 provider "aws" {
    region     = "us-east-2"
-   access_key = "AKIATQ37NXB2BYDLIJUF"
-   secret_key = "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"
+   access_key = "################"
+   secret_key = "######################"
    
 }
 
@@ -20,7 +20,7 @@ resource "aws_instance" "ec2_example" {
 		type        = "ssh"
 		host        = self.public_ip
 		user        = "ubuntu"
-		private_key = file("/home/rahul/Jhooq/keys/aws/aws_key")
+		private_key = file("/home/E/edstem/keys/aws/aws_key")
 		timeout     = "4m"
 	}
 }
